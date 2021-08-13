@@ -1,5 +1,5 @@
 .header {
-    background-image: url('/img/intro.png');
+    background-image: url('img/intro.png');
     background-position: center center;
     background-size: cover;
     color: white;
@@ -7,7 +7,8 @@
     height: 100vh;
     width: auto;
 
-    a:visited {
+    a:visited,
+    a {
         color: white;
     }
 
