@@ -41,6 +41,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+html.scrolled,
+body.scrolled {
+  overflow: hidden;
+}
+
 input,
 button,
 textarea {
@@ -88,7 +93,7 @@ h6 {
 }
 
 .header {
-  background-image: url("/img/intro.png");
+  background-image: url("../img/intro.png");
   background-position: center center;
   background-size: cover;
   color: white;
@@ -98,7 +103,8 @@ h6 {
   /*Тут конец*/
 }
 
-.header a:visited {
+.header a:visited,
+.header a {
   color: white;
 }
 
@@ -117,7 +123,13 @@ h6 {
   border-bottom: white 1px solid;
   width: 100%;
   position: fixed;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
   /*ПЕРЕСМОТРИ ТУТ JS НАДО*/
+}
+
+.header .navigation.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header .navigation .navigation__leftside {
@@ -131,7 +143,23 @@ h6 {
 }
 
 .header .navigation .navigation__leftside li {
-  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navigation .navigation__leftside li a {
+  height: 100%;
+  padding: 0 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 5;
 }
 
 .header .navigation .navigation__leftside li:hover {
@@ -147,7 +175,7 @@ h6 {
   position: relative;
 }
 
-.header .navigation .navigation__leftside .licrosed:before {
+.header .navigation .navigation__leftside .licrosed a:before {
   content: " ";
   position: absolute;
   top: 38px;
@@ -189,6 +217,11 @@ h6 {
 }
 
 @media (max-width: 906px) {
+  .header .navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .header .navigation__burger {
     display: block;
     position: fixed;
@@ -198,11 +231,11 @@ h6 {
     height: 50px;
     z-index: 3;
   }
-  .header .navigation__burger span {
+  .header .navigation__burger .burgerspan {
     position: absolute;
     background-color: white;
     left: 0;
-    width: 100%;
+    width: 60px;
     height: 4px;
     top: 28px;
   }
@@ -219,7 +252,7 @@ h6 {
     top: 10px;
   }
   .header .navigation__burger::after {
-    bottom: 0;
+    bottom: 0px;
   }
   .header .nav {
     background-color: rgba(0, 0, 0, 0.699);
@@ -263,15 +296,16 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
     width: 40%;
-    height: 0%;
     display: none;
   }
   .header .navigation .navigation__close {
     position: absolute;
     top: 50%;
-    left: 47%;
     width: 32px;
     height: 32px;
     opacity: 0.5;
@@ -457,9 +491,6 @@ h6 {
     top: 85%;
     right: 46%;
   }
-  .header .navigation .navigation__close {
-    left: 45%;
-  }
 }
 
 .about {
@@ -469,7 +500,7 @@ h6 {
 .about .trust {
   margin: 50px auto;
   padding: 35px;
-  background-image: url("/img/radius.png");
+  background-image: url("../img/radius.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

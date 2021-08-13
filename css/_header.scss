@@ -1,5 +1,5 @@
 .header {
-    background-image: url('img/intro.png');
+    background-image: url('../img/intro.png');
     background-position: center center;
     background-size: cover;
     color: white;
@@ -20,14 +20,29 @@
         border-bottom: white 1px solid;
         width: 100%;
         position: fixed;
+        transition: background-color 250ms;
+
         /*ПЕРЕСМОТРИ ТУТ JS НАДО*/
+        &.scrolled {
+            background-color: rgba(0, 0, 0, .9);
+        }
 
         .navigation__leftside {
             display: flex;
             flex-direction: row;
 
             li {
-                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    height: 100%;
+                    padding: 0 30px;
+                    line-height: 80px;
+                    position: relative;
+                    z-index: 5;
+                }
             }
 
             li:hover {
@@ -46,7 +61,7 @@
 
             }
 
-            .licrosed:before {
+            .licrosed a:before {
 
                 content: " ";
                 position: absolute;
@@ -88,6 +103,10 @@
     }
 
     @media (max-width: 906px) {
+        .navigation {
+            align-items: center;
+        }
+
         .navigation__burger {
             display: block;
             position: fixed;
@@ -97,11 +116,11 @@
             height: 50px;
             z-index: 3;
 
-            span {
+            .burgerspan {
                 position: absolute;
                 background-color: white;
                 left: 0;
-                width: 100%;
+                width: 60px;
                 height: 4px;
                 top: 28px;
             }
@@ -122,7 +141,7 @@
         }
 
         .navigation__burger::after {
-            bottom: 0;
+            bottom: 0px;
         }
 
         .nav {
@@ -161,16 +180,15 @@
 
             .navigation__leftside {
                 flex-direction: column;
+                align-items: center;
                 margin: 0 auto;
                 width: 40%;
-                height: 0%;
                 display: none;
             }
 
             .navigation__close {
                 position: absolute;
                 top: 50%;
-                left: 47%;
                 width: 32px;
                 height: 32px;
                 opacity: 0.5;
@@ -346,7 +364,4 @@
         right: 46%;
     }
 
-    .header .navigation .navigation__close {
-        left: 45%;
-    }
 }
