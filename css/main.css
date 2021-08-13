@@ -183,6 +183,11 @@ h6 {
   color: black;
 }
 
+.header .scroller {
+  background-color: white;
+  color: black;
+}
+
 @media (max-width: 906px) {
   .header .navigation__burger {
     display: block;
@@ -455,5 +460,49 @@ h6 {
   .header .navigation .navigation__close {
     left: 45%;
   }
+}
+
+.about {
+  font-family: 'Oswald';
+}
+
+.about .trust {
+  margin: 50px auto;
+  padding: 35px;
+  background-image: url("/img/radius.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+.about .trust .trust__h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about .trust .trust__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .trust .trust__images div {
+  margin: 0 15px;
+}
+
+.about .trust .trust__images div img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

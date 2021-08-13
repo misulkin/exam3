@@ -81,6 +81,11 @@
         }
     }
 
+    .scroller {
+        background-color: white;
+        color: black;
+    }
+
     @media (max-width: 906px) {
         .navigation__burger {
             display: block;
