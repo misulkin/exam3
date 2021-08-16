@@ -30,4 +30,12 @@ window.addEventListener('scroll', () => {
     if (window.pageYOffset < 200 && NAVIGATE.classList.contains('scrolled')) {
         headerBG();
     }
+
 })
+
+let
+
+
+/*$(document).ready(function () {
+    $('.products-slider').slick()
+})*/
