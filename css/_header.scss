@@ -21,6 +21,7 @@
         width: 100%;
         position: fixed;
         transition: background-color 250ms;
+        z-index: 2;
 
         /*ПЕРЕСМОТРИ ТУТ JS НАДО*/
         &.scrolled {
@@ -283,6 +284,7 @@
             align-items: center;
             justify-content: flex-end;
             margin: 0 30px;
+            z-index: 1;
 
 
             p {
@@ -358,10 +360,22 @@
     }
 }
 
-@media (max-width: 520px) {
-    .header .arowwplace {
-        top: 85%;
-        right: 46%;
-    }
 
+
+@media (max-width: 320px) {
+    .header .info .arowinf {
+        margin: 0;
+    }
+}
+
+.header .info .arowinf .info__block .info__h2 {
+    line-height: 42px;
+    letter-spacing: 6px;
+
+}
+
+.header .arowwplace {
+    top: 90%;
+    right: 50%;
+    transform: translate(+50%);
 }

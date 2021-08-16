@@ -2,7 +2,7 @@
     font-family: 'Oswald';
 
     .trust {
-        margin: 50px auto;
+        margin: 70px auto;
         padding: 35px;
         background-image: url('../img/radius.png');
         background-size: contain;
@@ -27,6 +27,70 @@
                 img {
                     width: 100%;
                     height: auto;
+                }
+            }
+        }
+    }
+
+    .products-wrapper {
+        width: 100%;
+
+        .products {
+            display: flex;
+            flex-direction: column;
+            margin: 3% 5%;
+
+            .products__navigation {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .products__link {
+                    font-size: 32px;
+
+                }
+
+
+            }
+
+            .products-tabs {
+                .products-item {
+                    display: flex;
+                    flex-direction: row;
+                    display: none;
+
+                    &:target {
+                        display: flex;
+                    }
+
+                    .products-item__text {
+                        margin: 10%;
+
+                        .products-item__h3 {
+                            font-size: 28px;
+                        }
+
+                        .products-item__disc {
+                            font-size: 18px;
+                            color: grey;
+                            padding: 30px 0;
+                        }
+
+                    }
+
+                    .products-item__imges {
+
+                        width: 50%;
+
+                        .products-item__img {
+                            width: 100%;
+                            margin: 50px 0;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
                 }
             }
         }
