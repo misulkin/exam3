@@ -61,6 +61,7 @@ $(document).ready(function () {
 });
 $('.buy__slider').slick({
     dots: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -79,7 +80,9 @@ $('.buy__slider').slick({
             breakpoint: 680,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: false
             }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -88,6 +91,21 @@ $('.buy__slider').slick({
     ]
 });
 
+
+$(document).ready(function () {
+    $('#firstask').click(function (event) {
+        document.getElementById('firstquest').classList.toggle('activequest');
+    });
+    $('#secondask').click(function (event) {
+        document.getElementById('secondquest').classList.toggle('activequest');
+    });
+    $('#thirdask').click(function (event) {
+        document.getElementById('thirdquest').classList.toggle('activequest');
+    });
+    $('#forthask').click(function (event) {
+        document.getElementById('forthquest').classList.toggle('activequest');
+    });
+})
 /*$(document).ready(function () {
     $('.products-slider').slick()
 })*/
