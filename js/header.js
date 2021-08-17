@@ -33,8 +33,66 @@ window.addEventListener('scroll', () => {
 
 })
 
-let
-
+$(document).ready(function () {
+    $('#firsttab').click(function (event) {
+        $('#firsttab').addClass('activetab');
+        $('#secondtab').removeClass('activetab');
+        $('#thirdtab').removeClass('activetab');
+        $('#tab1').addClass('activeblocktab');
+        $('#tab2').removeClass('activeblocktab');
+        $('#tab3').removeClass('activeblocktab');
+    });
+    $('#secondtab').click(function (event) {
+        $('#firsttab').removeClass('activetab');
+        $('#secondtab').addClass('activetab');
+        $('#thirdtab').removeClass('activetab');
+        $('#tab1').removeClass('activeblocktab');
+        $('#tab2').addClass('activeblocktab');
+        $('#tab3').removeClass('activeblocktab');
+    });
+    $('#thirdtab').click(function (event) {
+        $('#firsttab').removeClass('activetab');
+        $('#secondtab').removeClass('activetab');
+        $('#thirdtab').addClass('activetab');
+        $('#tab1').removeClass('activeblocktab');
+        $('#tab2').removeClass('activeblocktab');
+        $('#tab3').addClass('activeblocktab');
+    });
+});
+$('.buy__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
 
 /*$(document).ready(function () {
     $('.products-slider').slick()

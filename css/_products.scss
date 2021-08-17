@@ -1,0 +1,39 @@
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.buy__item {
+    min-width: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy__h3 {
+    font-family: "Oswald";
+    font-size: 32px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.buy__item {
+    font-family: "Oswald";
+}
+
+
+
+.buy__itemdisc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        font-family: 'Material Icons';
+        color: #6E774A;
+    }
+}

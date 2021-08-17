@@ -575,10 +575,17 @@ h6 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-size: 32px;
+  border-bottom: 5px solid #CED6AF;
 }
 
 .about .products-wrapper .products .products__navigation .products__link {
-  font-size: 32px;
+  color: black;
+  padding: 20px;
+}
+
+.about .products-wrapper .products .products__navigation .products__link:visited {
+  color: black;
 }
 
 .about .products-wrapper .products .products-tabs .products-item {
@@ -592,14 +599,11 @@ h6 {
   display: none;
 }
 
-.about .products-wrapper .products .products-tabs .products-item:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .about .products-wrapper .products .products-tabs .products-item .products-item__text {
   margin: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }
 
 .about .products-wrapper .products .products-tabs .products-item .products-item__text .products-item__h3 {
@@ -613,7 +617,11 @@ h6 {
 }
 
 .about .products-wrapper .products .products-tabs .products-item .products-item__imges {
-  width: 50%;
+  width: 60%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }
 
 .about .products-wrapper .products .products-tabs .products-item .products-item__imges .products-item__img {
@@ -623,5 +631,199 @@ h6 {
 
 .about .products-wrapper .products .products-tabs .products-item .products-item__imges .products-item__img img {
   width: 100%;
+}
+
+.about .products-wrapper .products .products-tabs .activeblocktab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.activetab {
+  -webkit-box-shadow: 0px 5px 0px -1px #1C1C1B;
+          box-shadow: 0px 5px 0px -1px #1C1C1B;
+}
+
+@media (max-width: 720px) {
+  .about {
+    font-family: 'Oswald';
+  }
+  .about .trust {
+    margin: 70px auto;
+    padding: 35px;
+    background-image: url("../img/radius.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+  }
+  .about .trust .trust__h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .about .trust .trust__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .trust .trust__images div {
+    margin: 0 15px;
+  }
+  .about .trust .trust__images div img {
+    width: 100%;
+    height: auto;
+  }
+  .about .products-wrapper {
+    width: 100%;
+  }
+  .about .products-wrapper .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3% 0px;
+  }
+  .about .products-wrapper .products .products__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 32px;
+    border-bottom: none;
+  }
+  .about .products-wrapper .products .products__navigation .products__link {
+    color: black;
+    padding: 20px;
+  }
+  .about .products-wrapper .products .products__navigation .products__link:visited {
+    color: black;
+  }
+  .about .products-wrapper .products .products-tabs .products-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__text {
+    margin: 10%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__text .products-item__h3 {
+    font-size: 28px;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__text .products-item__disc {
+    font-size: 18px;
+    color: grey;
+    padding: 30px 0;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__imges {
+    width: 80%;
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__imges .products-item__img {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .about .products-wrapper .products .products-tabs .products-item .products-item__imges .products-item__img img {
+    width: 100%;
+  }
+  .about .products-wrapper .products .products-tabs .activeblocktab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activetab {
+    background-color: #5a5e4d;
+    -webkit-box-shadow: 0px 5px 0px -1px #1C1C1B;
+            box-shadow: 0px 5px 0px -1px #1C1C1B;
+    color: white !important;
+  }
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.buy__item {
+  min-width: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buy__h3 {
+  font-family: "Oswald";
+  font-size: 32px;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.buy__item {
+  font-family: "Oswald";
+}
+
+.buy__itemdisc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buy__itemdisc span {
+  font-family: 'Material Icons';
+  color: #6E774A;
 }
 /*# sourceMappingURL=main.css.map */
