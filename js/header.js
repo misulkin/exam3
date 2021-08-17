@@ -106,6 +106,16 @@ $(document).ready(function () {
         document.getElementById('forthquest').classList.toggle('activequest');
     });
 })
+
+$('.testimonial__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000
+})
 /*$(document).ready(function () {
     $('.products-slider').slick()
 })*/
