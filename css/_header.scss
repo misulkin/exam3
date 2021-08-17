@@ -366,13 +366,30 @@
     .header .info .arowinf {
         margin: 0;
     }
+
+    .header .info .arowinf .info__block .info__h2 {
+        line-height: 40px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .header .info .arowinf .info__block a .info__button {
+        width: 80%;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .header .info .arowinf .info__block .info__bottext {
+        margin: 2px 0;
+    }
+
+    .header .info .arowinf .info__block .info__disc {
+        margin: 10px 0;
+        letter-spacing: 5px;
+    }
 }
 
-.header .info .arowinf .info__block .info__h2 {
-    line-height: 42px;
-    letter-spacing: 6px;
 
-}
 
 .header .arowwplace {
     top: 90%;

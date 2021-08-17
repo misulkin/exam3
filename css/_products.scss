@@ -14,26 +14,133 @@
     flex-direction: column;
 }
 
+.buy {
+    text-align: center;
+}
+
 .buy__h3 {
     font-family: "Oswald";
-    font-size: 32px;
+    font-size: 30px;
     margin: 5% auto;
     text-align: center;
 }
 
 .buy__item {
     font-family: "Oswald";
+    margin: 0 30px;
+
 }
 
+.buy__place {
+    display: flex;
+    flex-direction: row;
 
+    a {
+        flex-grow: 1;
+        text-align: center;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: black;
+
+            .buy__button {
+                background-color: grey;
+            }
+
+            .buy__line {
+                width: 40px;
+                border-bottom: solid 3px black;
+                margin: 0 10px;
+            }
+        }
+    }
+
+
+
+}
+
+.buy__price {
+    background-color: #F1F1F1;
+    padding: 20px;
+    flex-grow: 1.5;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.buy__button {
+    background-color: #6E774A;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy__line {
+    width: 40px;
+    border-bottom: solid 3px white;
+    margin: 0 10px;
+}
 
 .buy__itemdisc {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 1px #CED6AF;
+    display: flex;
+    height: 100%;
 
     span {
         font-family: 'Material Icons';
         color: #6E774A;
     }
+}
+
+.buy__stars {
+    margin: 10px;
+}
+
+.buy__h4 {
+    margin-bottom: 20px;
+}
+
+.buy__img {
+    margin: 10px;
+}
+
+.buy__slider {
+    min-width: 0px;
+    position: relative;
+}
+
+.buy__slider .slick-arrow {
+    font-size: 0;
+}
+
+.buy__slider .slick-arrow.slick-prev {
+    // левая стрелка остается с левой стороны слайдера
+    background: url('../img/leftarrow.png') 0 0 / 100% no-repeat;
+    order: 1;
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    top: 110%;
+    left: 30%;
+    /*right: 10%;
+    top: 460px;*/
+
+}
+
+.buy__slider .slick-arrow.slick-next {
+    // правая стрелка переместилась справа от слайдера
+    background: url('../img/rightarrow.png') 0 0 / 100% no-repeat;
+    order: 2;
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    right: 30%;
+    top: 110%;
+
 }
