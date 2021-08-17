@@ -43,6 +43,7 @@
                     line-height: 80px;
                     position: relative;
                     z-index: 5;
+
                 }
             }
 
@@ -51,6 +52,11 @@
                 color: black;
 
                 a:visited {
+                    color: black;
+
+                }
+
+                a:hover {
                     color: black;
                 }
             }
@@ -334,31 +340,45 @@
                         text-align: center;
                         margin-top: 30px;
 
-                        .info__button-line {
-                            margin-left: 15px;
-                            width: 50px;
-                            border-bottom: white 2px solid;
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.795);
+                            color: rgb(39, 39, 39);
+
+                            .info__button-line {
+
+                                border-bottom: rgb(39, 39, 39) 2px solid;
+                            }
                         }
+
                     }
 
+                    .info__button-line {
+                        margin-left: 15px;
+                        width: 50px;
+                        border-bottom: white 2px solid;
+
+
+                    }
                 }
 
-                .info__bottext {
-                    margin-top: 15px;
-                    font-size: 16px;
-                    text-align: end;
-                    letter-spacing: 6px;
-                    font-weight: 300;
-                }
             }
 
-
-
+            .info__bottext {
+                margin-top: 15px;
+                font-size: 16px;
+                text-align: end;
+                letter-spacing: 6px;
+                font-weight: 300;
+            }
         }
 
 
+
     }
+
+
 }
+
 
 
 
@@ -395,4 +415,25 @@
     top: 90%;
     right: 50%;
     transform: translate(+50%);
+}
+
+@media (max-height: 630px) {
+    .header .navigation .navigation__leftside li a {
+        height: 100%;
+        padding: 0 0px;
+        line-height: 70px;
+    }
+
+    .header .navigation .navigation__leftside .licrosed {
+        display: none;
+    }
+
+    .header .navigation .navigation__rightside p {
+        height: 10px;
+        font-size: 18px;
+    }
+
+    .header .navigation .navigation__close {
+        top: 45%;
+    }
 }
