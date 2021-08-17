@@ -531,7 +531,7 @@ h6 {
           transform: translate(50%);
 }
 
-@media (max-height: 630px) {
+@media (max-height: 600px) {
   .header .navigation .navigation__leftside li a {
     height: 100%;
     padding: 0 0px;
